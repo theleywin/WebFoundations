@@ -1,6 +1,9 @@
 
 body{
     background-color: black;
+    background-image: url("../img/backgd.jpg");
+    background-size:cover;
+    background-position: center;
     color: azure;
     font-style: oblique;
     font-size: larger;
@@ -23,4 +26,9 @@ div{
 
 .rice{
     margin: auto;
+}
+.me{
+    font-size:medium;
+    margin-left:1500px ;
+    margin-top: 100px;
 }
