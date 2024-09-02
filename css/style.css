@@ -8,6 +8,9 @@ body{
     font-style: oblique;
     font-size: larger;
 }
+a{
+    color: darkgrey;
+}
 
 div{
     width: 500px;
