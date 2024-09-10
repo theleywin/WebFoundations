@@ -1,44 +1,90 @@
-
-body{
+/* Base styles */
+body {
     background-color: black;
     background-image: url("../img/backgd.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     color: azure;
     font-style: oblique;
     font-size: larger;
 }
-a{
+
+a {
     color: darkgrey;
 }
 
-div{
+div {
     width: 500px;
 }
 
-.welcome{
-    margin: auto;
-}
-.flan{
+.welcome, .flan, .chicken, .rice {
     margin: auto;
 }
 
-.chicken{
-    margin: auto;
-}
-
-.rice{
-    margin: auto;
-}
-.me{
-    font-size:medium;
-    margin-left:1500px ;
+.me {
+    font-size: medium;
+    margin-left: 1500px;
     margin-top: 100px;
 }
-.chic{
-    margin-left:585px;
-    background: rgba(128,128,128,0.3);
-    width: 400px;
 
+.chic {
+    margin-left: 550px;
+    background: rgba(128, 128, 128, 0.3);
+    width: 460px;
+    font-size: x-large;
+}
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        font-size: large;
+    }
+
+    .welcome img, .chicken img, .chic img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .me {
+        margin-left: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .chic {
+        margin-left: auto;
+        width: 90%;
+        font-size: large;
+    }
+
+    div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: medium;
+    }
+
+    .welcome img, .chicken img, .chic img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .me {
+        margin-left: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .chic {
+        margin-left: auto;
+        width: 100%;
+        font-size: medium;
+    }
+
+    div {
+        width: 100%;
+    }
 }
